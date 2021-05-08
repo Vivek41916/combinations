@@ -1,0 +1,5 @@
+from itertools import *
+l=list(map(str,input().split()))
+for i in range(int(l[1])):
+    for k in sorted(list(combinations(sorted(list(l[0])),i+1))):
+        print("".join(k))
